@@ -47,6 +47,14 @@ footer
   background-color: rgb(243, 243, 142);
 }
 
+#footerapropos
+{
+  position:absolute;
+  bottom: -150px;
+  width: 100%;
+  background-color: rgb(243, 243, 142);
+}
+
 @media only screen and (max-width: 700px) {
   footer{
   position:relative;

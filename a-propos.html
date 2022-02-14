@@ -7,19 +7,30 @@
         <title>A propos de nous</title>
         <!-- Load external CSS styles -->
         <link rel="stylesheet" href="styles.css">
+        <script>
+            function imagefun() {
+            var Image_Id = document.getElementById("getthis");
+            if (Image_Id.src.match("mascot-bio407.png")) {
+                Image_Id.src = "mascot-L2-bio407.png";
+            }
+            else if (Image_Id.src.match("mascot-L2-bio407.png")){
+                Image_Id.src = "mascot-bio407.png";
+            }
+        }  
+        </script>
     </head>
-
     <body>
         <div class="navbar">
             <a href="./index.html">Page principale</a>
             <a href="./a-propos.html">A propos de Nous</a>
         </div>
         <p>L'équipe <b>Silence, ça poulpe!</b> vous remercie de votre attention <br><br><br>Sepehr Bahrinejad, Mathias Houdant, Samuel Armanet, Colin Smeulders, Sacha Bride</p>
-        <img src="./mascot-bio407.png">
-        <script src="scripts.js"></script>        
-        <footer>
+        <div>
+           <img id="getthis" src="./mascot-L2-bio407.png">    
+        </div>            
+        <input type="button" onclick="imagefun()" value="Changez la mascotte!">      
+        <footer id="footerapropos">
             <p>&copy;  2022 Tous Droits Réservés</p>
         </footer> 
     </body>
-
 </html>
